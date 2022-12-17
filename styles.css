@@ -23,11 +23,6 @@ body {
 }
 
 
-
-
-
-
-
 #input-box {
     height:30px;
     width:300px;
@@ -41,5 +36,6 @@ body {
     justify-content: center;
     padding: 10px;
     font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
 }
 
