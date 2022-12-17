@@ -1,6 +1,7 @@
 
 var input = document.getElementById('input')
 
+//Buttons for numbers
 var one = document.getElementById('one')
 var two = document.getElementById('two')
 var three = document.getElementById('three')
@@ -11,8 +12,18 @@ var seven = document.getElementById('seven')
 var eight = document.getElementById('eight')
 var nine = document.getElementById('nine')
 var zero = document.getElementById('zero')
+//Buttons for operators
+var plus = document.getElementById('plus')
+var minus = document.getElementById('minus')
+var multiply = document.getElementById('multiply')
+var divide = document.getElementById('divide')
+var equals = document.getElementById('equals')
+//Buttons for others
+var del = document.getElementById('delete')
+var decimal = document.getElementById('decimal')
 
 
+//Numbers
 one.onclick = function addOne(){
     input.innerHTML += 1
 }
@@ -53,3 +64,31 @@ zero.onclick = function addZero(){
     input.innerHTML += 0
 }
 
+
+
+//Operators
+plus.onclick = function addPlus(){
+    input.innerHTML += ' + '
+}
+
+minus.onclick = function addMinus(){
+    input.innerHTML += ' - '
+}
+
+multiply.onclick = function addMultiply(){
+    input.innerHTML += ' * '
+}
+
+divide.onclick = function addDivide(){
+    input.innerHTML += ' / '
+}
+
+//SUM
+equals.onclick = function sum(){
+    input.innerHTML = eval(input.innerHTML)
+}
+
+//Others
+del.onclick = function deleteNumbers(){
+    input.innerHTML = ''
+}
