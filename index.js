@@ -92,3 +92,7 @@ equals.onclick = function sum(){
 del.onclick = function deleteNumbers(){
     input.innerHTML = ''
 }
+
+decimal.onclick = function addDecimal(){
+    input.innerHTML += '.'
+}
